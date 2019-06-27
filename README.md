@@ -1,6 +1,6 @@
 # Web UI animations
 
-By Eder Díaz
+by Eder Díaz
 
 ## Slides in the web
 

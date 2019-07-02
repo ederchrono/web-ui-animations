@@ -1,10 +1,19 @@
 import welcome from '~/slides/welcome.mdx'
+import intro from '~/slides/intro.mdx'
 import importance from '~/slides/importance.mdx'
+import examples from '~/slides/examples.mdx'
 import communication from '~/slides/communication.mdx'
 import final from '~/slides/final.mdx'
 
 export { default as theme } from './wizeline-theme'
-export default [...welcome, ...importance, ...communication, ...final]
+export default [
+  ...welcome,
+  ...intro,
+  ...importance,
+  ...communication,
+  ...examples,
+  ...final
+]
 
 // why animation is important
 // we stopped making animation

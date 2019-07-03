@@ -35,7 +35,7 @@ export default BlankTemplate
 
 ---
 
-# Terminology
+# Basic terminology
 
 ### Communication is key
 
@@ -46,3 +46,132 @@ Saying "I want this button to disappear after clicked" is like telling
 someone to make a menu pretty or a button important, it is really ambiguous
 
 </Notes>
+
+---
+
+## Transition
+
+#### Our building block
+
+<Notes>A transition is our main tool to create animations.</Notes>
+
+---
+
+### An animation can be made of `one` or `more` transitions
+
+<Notes>
+Transition is not equal to animation, an animation can be made from just one transition but it could also be a group of transitions.
+
+Imagine that animation is a living being
+
+There are organisms and it can be made of only one cell or have a lot of cells.
+
+And if a transition is a cell, then it is made of many parts...
+
+</Notes>
+
+---
+
+export default BlankTemplate
+
+![](./slides/images/diagram-of-an-animal-cell.jpg)
+
+<Notes>... but don't worry there are less parts in a transition than in a cell</Notes>
+
+---
+
+## A transition is made of...
+
+- Start state
+- End state
+- Time
+- Delay
+- Easing
+
+<Notes>I'll explain them but first let's loos at an example</Notes>
+
+---
+
+export default BlankTemplate
+
+<Codepen url="https://codepen.io/ederdiaz/pen/gNKKVY" />
+
+<Notes>let's break it down into it's elements</Notes>
+
+---
+
+export default BlankTemplate
+
+![](./slides/images/transition.png)
+
+---
+
+## Easing
+
+### The style of your transition
+
+---
+
+## An `easing` is technically
+
+### a function that defines the `progress` of the transition through `time`
+
+---
+
+export default BlankTemplate
+
+![](./slides/images/functions.png)
+
+---
+
+export default BlankTemplate
+
+![](./slides/images/linear.gif)
+
+---
+
+export default BlankTemplate
+
+![](./slides/images/ease-in.gif)
+![](./slides/images/ease-out.gif)
+![](./slides/images/ease-in-out.gif)
+
+---
+
+export default BlankTemplate
+
+![](./slides/images/elastic.gif)
+![](./slides/images/bounce.gif)
+
+---
+
+export default BlankTemplate
+
+![](./slides/images/knowledge.jpg)
+
+---
+
+### Motion Specs
+
+```
+start state
+  - x:0
+  - y:0
+  - scale:1
+
+end state
+  - x:300
+  - y:300
+  - scale:2
+time: 3
+delay: 2
+ease: EaseIn
+```
+
+---
+
+export default BlankTemplate
+
+## Sketch Motion Specs template
+
+![](./slides/images/motion-spec.png)

@@ -29,8 +29,11 @@ export default BlankTemplate
 ![](./slides/images/zeplin.png)
 
 <Notes>
-  and we have gone as far as having tools that even generate code for the styles of a
-  design
+and we have gone as far as having design tools that generate the code for the styles of a
+page
+
+but there's a gap when it comes to communicate animations
+
 </Notes>
 
 ---
@@ -40,6 +43,8 @@ export default BlankTemplate
 ### Communication is key
 
 <Notes>
+It doesn't matter if you are a ux designer, sw engineer or project manager,
+
 We need a way to be able to express the way we want an animation to work.
 
 Saying "I want this button to disappear after clicked" is like telling
@@ -62,11 +67,11 @@ someone to make a menu pretty or a button important, it is really ambiguous
 <Notes>
 Transition is not equal to animation, an animation can be made from just one transition but it could also be a group of transitions.
 
-Imagine that animation is a living being
+Imagine that animation is a living being and a transition is a cell
 
-There are organisms and it can be made of only one cell or have a lot of cells.
+There are organisms that can be made of only one cell or have a lot of cells
 
-And if a transition is a cell, then it is made of many parts...
+And transition like a cell has many parts
 
 </Notes>
 
@@ -88,7 +93,7 @@ export default BlankTemplate
 - Delay
 - Easing
 
-<Notes>I'll explain them but first let's loos at an example</Notes>
+<Notes>I'll explain them but first let's look at an example</Notes>
 
 ---
 
@@ -104,6 +109,21 @@ export default BlankTemplate
 
 ![](./slides/images/transition.png)
 
+<Notes>
+The start state defines the properties of the object at the beginning of the transition
+
+Similarly the end state sets the way they should end
+
+there are a lot of properties in an object but we are just mentioning the ones we wantto change
+
+delay indicates how much time the transition should take to start
+
+and the time defines how long should it take for the properties to change.
+
+most of this is almost self explanatory except for the easing
+
+</Notes>
+
 ---
 
 ## Easing
@@ -112,9 +132,9 @@ export default BlankTemplate
 
 ---
 
-## An `easing` is technically
+## Also called `easing function`,
 
-### a function that defines the `progress` of the transition through `time`
+### defines the `progress` of the transition through `time`
 
 ---
 
@@ -122,11 +142,35 @@ export default BlankTemplate
 
 ![](./slides/images/functions.png)
 
+<Notes>
+The function works with 2 axis, in this case the horizontal is the time of the transition,
+and the vertical one is the progress or how much the properties of the object are changing
+
+if you still dont get it don't worry, we are going to use animations to understand them better
+
+</Notes>
+
 ---
 
 export default BlankTemplate
 
 ![](./slides/images/linear.gif)
+
+<Notes>
+First the simplest one, linear
+
+as it name implies as the time passes the change of the properties will be linear,
+it will keep the same speed with no acceleration
+
+you can see the green circle constantly going up
+
+the problem with linear is that it is the less natural easing function, when you
+animate objects with it things look robotic.
+
+that could be good if you are animating an airplane or a robot that needs to look like that,
+but for most cases you'll want to avoid this easing
+
+</Notes>
 
 ---
 
@@ -136,6 +180,24 @@ export default BlankTemplate
 ![](./slides/images/ease-out.gif)
 ![](./slides/images/ease-in-out.gif)
 
+<Notes>
+Now we have these 3 functions, ease in, ease out and ease in out
+
+Ease in starts really slow and then starts accelerating until it gets to the end
+
+Ease out is the oposite, it starts moving quickly and then loses it's speed until it stops
+
+finally ease in out is a combination of the other two, it starts slow,
+then accelerates at the middle and loses speed at the end
+
+these 3 easings are the most common ones, you'll be using them most of the times
+because the look more natural.
+
+but they are not the only easings that exist, actually like functions, there's
+and infinite number of easings that you can create and use
+
+</Notes>
+
 ---
 
 export default BlankTemplate
@@ -143,11 +205,21 @@ export default BlankTemplate
 ![](./slides/images/elastic.gif)
 ![](./slides/images/bounce.gif)
 
+<Notes>
+For example elastic, which goes beyond the end state and gets back and forth
+like a rubber band until it settles
+
+and bounce, that gets to the end state but bounces back a couple of times before finishing
+
+</Notes>
+
 ---
 
 export default BlankTemplate
 
 ![](./slides/images/knowledge.jpg)
+
+<Notes>now with that knowledge we can start making some...</Notes>
 
 ---
 
@@ -168,10 +240,18 @@ delay: 2
 ease: EaseIn
 ```
 
+<Notes>
+These specifications will help us to communicate with others how an animation should be
+
+they can be as simple as text like this one, or you can get fancy and use a graphic
+tool like sketch and use a template like this...
+
+</Notes>
+
 ---
 
 export default BlankTemplate
 
-## Sketch Motion Specs template
+## Motion Specs
 
 ![](./slides/images/motion-spec.png)

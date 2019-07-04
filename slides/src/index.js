@@ -10,22 +10,7 @@ export default [
   ...welcome,
   ...intro,
   ...importance,
-  ...communication,
   ...examples,
+  ...communication,
   ...final
 ]
-
-// why animation is important
-// we stopped making animation
-// animation as a first class citizen
-// success cases
-// Do's and dont's of animation
-// Get used to animation lingo
-// transition != animation
-// initial state, end state
-// easings
-// sequence
-// types of animations
-// programatic
-// css & js
-// frame by frame
